@@ -1,9 +1,9 @@
-# 💳 Credit Card Fraud Transaction Analysis – Data Analytics Report
+# 📊 Dynamic Sales Analytics Dashboard – Data Analytics Report
 
 ## 📌 Project Overview
-The **Credit Card Fraud Transaction Analysis Dashboard** is designed to monitor and analyze fraudulent credit card transactions using interactive visualizations. The dashboard helps identify fraud patterns, transaction trends, and high-risk transaction ranges.
+The **Dynamic Sales Analytics Dashboard** is designed to analyze sales performance using interactive visualizations. The dashboard provides insights into sales profit, product performance, payment methods, state-wise sales distribution, and category-level demand.
 
-The main goal of this project is to help financial institutions **detect suspicious transactions, monitor fraud rates, and gain insights into fraud behavior through data analytics.**
+The goal of this dashboard is to help businesses **monitor sales trends, identify profitable products, and optimize decision-making through data-driven insights.**
 
 ---
 
@@ -11,20 +11,20 @@ The main goal of this project is to help financial institutions **detect suspici
 
 The main objectives of this project are:
 
-- Analyze **fraud transactions across different months**
-- Identify **transaction amount ranges most affected by fraud**
-- Understand the **distribution of fraud vs non-fraud transactions**
-- Monitor **overall transaction activity**
-- Provide **interactive filtering for deeper analysis**
+- Analyze **monthly sales profit trends**
+- Identify **high-performing product sub-categories**
+- Understand **state-wise sales distribution**
+- Evaluate **customer payment preferences**
+- Study **category-wise quantity demand**
 
 ---
 
 # 🛠 Tools & Technologies
 
-- **Microsoft Power BI** – Dashboard development and visualization  
+- **Power BI** – Data visualization and dashboard development  
 - **Power Query** – Data cleaning and transformation  
-- **DAX (Data Analysis Expressions)** – Calculations and measures  
-- **Dataset** – Credit Card Transaction Dataset  
+- **DAX (Data Analysis Expressions)** – Data modeling and calculations  
+- **Dataset** – Retail Sales Dataset  
 
 ---
 
@@ -32,132 +32,135 @@ The main objectives of this project are:
 
 | Metric | Value |
 |------|------|
-| Total Transactions | **100K** |
-| Fraud Transactions | **1,000** |
-| Average Transaction Amount | **2.50K** |
-| Fraud Rate | **1%** |
-| Maximum Transaction Amount | **5.00K** |
+| Total Profit | **37K** |
+| Total Quantity Sold | **5615** |
+| Total Sales Amount | **438K** |
+| Average Sales Value | **120.90K** |
 
-These KPIs provide a quick summary of the transaction dataset and fraud statistics.
+These KPIs provide a quick overview of the overall sales performance.
 
 ---
 
 # 📈 Dashboard Analysis & Insights
 
-## 1️⃣ Fraud Transactions by Month
+## 1️⃣ Monthly Profit Analysis
 
-The **Fraud Transactions by Month** chart visualizes the monthly pattern of fraudulent activities.
-
-### Key Observations
-
-- Fraud cases fluctuate across months.
-- A noticeable spike occurs in **August**.
-- Fraud activity slightly decreases towards the end of the year.
-
-**Insight:**  
-Fraud activities may follow **seasonal patterns**, possibly influenced by increased transaction volumes or online shopping periods.
-
----
-
-## 2️⃣ Transaction by Amount Range
-
-This visualization groups transactions into different value ranges to analyze fraud concentration.
-
-### Amount Categories
-
-- **\< $1K**
-- **$1K – $2.5K**
-- **$2.5K – $5K**
+The **Sum of Profit by Month** chart shows the monthly profit performance.
 
 ### Key Observations
 
-- The **$2.5K – $5K range records the highest fraud cases (511)**.
-- Lower-value transactions have fewer fraud cases.
+- Highest profit months include **January, February, March, and November**
+- Some months like **May and July** show negative profit
+- Profit increases again towards the **end of the year**
 
 **Insight:**  
-Fraudsters tend to target **medium to high transaction values** rather than very small amounts.
+Sales performance fluctuates throughout the year, suggesting **seasonal demand patterns** and potential inventory or marketing impacts.
 
 ---
 
-## 3️⃣ Fraud vs Non-Fraud Distribution
+## 2️⃣ Profit by Sub-Category
 
-The **donut chart** shows the proportion of fraudulent and legitimate transactions.
+This visualization highlights which product sub-categories generate the highest profit.
 
-| Type | Count |
-|------|------|
-| Non-Fraud Transactions | **99K (99%)** |
-| Fraud Transactions | **1K (1%)** |
+### Top Profitable Sub-Categories
+
+1. **Printers**
+2. **Bookcases**
+3. **Saree**
+4. **Accessories**
+5. **Tables**
 
 **Insight:**  
-Fraud represents a small portion of total transactions but can still cause **significant financial risk**.
+Printers and Bookcases generate the highest profits, indicating strong demand or higher margins in these sub-categories.
 
 ---
 
-## 4️⃣ Total Transactions by Month
+## 3️⃣ State-wise Sales Distribution
 
-This chart displays the **overall monthly transaction volume**.
+The **Sum of Amount by State** chart shows sales distribution across different states.
 
-### Observations
+### Top States by Sales
 
-- Transaction volume remains **relatively stable across months**.
-- Minor variations appear throughout the year.
+1. **Maharashtra**
+2. **Madhya Pradesh**
+3. **Uttar Pradesh**
+4. **Delhi**
+5. **Rajasthan**
 
 **Insight:**  
-Consistent transaction volume indicates steady customer activity across the dataset period.
+Maharashtra and Madhya Pradesh contribute the highest share of total sales.
 
 ---
 
-## 5️⃣ Fraud Transactions Table
+## 4️⃣ Payment Mode Analysis
 
-The dashboard includes a **detailed table** showing top fraud transactions.
+This chart shows the distribution of payment methods used by customers.
 
-Displayed fields include:
+| Payment Mode | Sales |
+|--------------|------|
+| Cash on Delivery (COD) | **155K (35.45%)** |
+| Credit Card | **87K (19.86%)** |
+| EMI | **78K (17.79%)** |
+| UPI | **69K (15.68%)** |
+| Others | Smaller share |
 
-- **Transaction ID**
-- **Transaction Amount**
-- **Fraud Indicator**
+**Insight:**  
+**Cash on Delivery is the most preferred payment method**, suggesting that customers still rely heavily on traditional payment options.
 
-Conditional formatting is applied to visually highlight fraud indicators.
+---
+
+## 5️⃣ Quantity Sold by Category
+
+This visualization shows product demand across different categories.
+
+| Category | Quantity |
+|----------|----------|
+| Clothing | **4K (≈62%)** |
+| Electronics | **1K (≈20%)** |
+| Furniture | **1K (≈16%)** |
+
+**Insight:**  
+Clothing products dominate sales volume, accounting for the majority of total items sold.
 
 ---
 
 # 🎛 Dashboard Filters
 
-The dashboard includes interactive slicers that allow users to explore data dynamically:
+The dashboard includes interactive filters to allow deeper analysis:
 
-- **Transaction Date Filter** – Analyze transactions within a selected time range
-- **Fraud Status Filter** – Filter fraud or non-fraud transactions
-- **Amount Range Filter** – Focus on specific transaction value ranges
+- **Sub-Category Filter**
+- **Category Filter**
 
-These filters allow users to perform **customized fraud analysis.**
+These filters allow users to dynamically explore sales performance for specific product groups.
 
 ---
 
 # 📊 Key Findings
 
-- Total transactions in the dataset reached **100,000**.
-- **1,000 transactions were identified as fraudulent**, resulting in a **1% fraud rate**.
-- The **$2.5K – $5K transaction range** shows the highest fraud activity.
-- Fraud activity spikes around **August**, indicating possible seasonal behavior.
-- The majority (**99%**) of transactions are legitimate.
+- Total sales revenue reached **438K**, generating **37K profit**.
+- **Clothing category dominates product demand**.
+- **Printers and Bookcases are the most profitable sub-categories**.
+- **Maharashtra contributes the highest sales amount**.
+- **Cash on Delivery is the most commonly used payment method**.
+- Sales profits vary significantly across months, showing potential **seasonal trends**.
 
 ---
 
 # 🚀 Conclusion
 
-The **Credit Card Fraud Transaction Analysis Dashboard** provides a clear and interactive way to analyze fraud patterns and transaction behavior.
+The **Dynamic Sales Analytics Dashboard** provides a comprehensive overview of sales performance across different product categories, regions, and payment methods.
 
-By using data visualization and analytics tools like **Power BI**, organizations can:
+Using data analytics, businesses can:
 
-- Monitor fraud trends
-- Identify high-risk transaction ranges
-- Detect unusual activity patterns
-- Support data-driven fraud prevention strategies
+- Identify profitable product segments
+- Understand customer purchasing behavior
+- Monitor monthly sales performance
+- Optimize sales strategies
 
-This project demonstrates how **business intelligence dashboards can transform raw financial transaction data into meaningful insights for fraud monitoring and decision-making.**
+This dashboard demonstrates how **business intelligence tools like Power BI can transform raw sales data into actionable insights.**
 
 ---
 
 ## 📷 Dashboard Preview
 
-![Fraud Dashboard](dashboard.png)
+![Sales Dashboard](dashboard.png)
